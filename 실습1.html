@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>실습1</title>
     <style>
-        .span {
-            font-size: 60px;
-            text-align: center;
-            font-weight: 700;
+        .box-container {
+            display: flex;
+            font-size: 100px;
+            font-weight: 800;
+            position: absolute;
+            top: 200px;
+            left: 600px;
         }
-        .blue {
+    
+        .box1 {
             color:blue;
         }
-        .yellow {
+        .box2 {
             color:yellow; 
         }
-        .red {
+        .box3 {
             color:red;
         }
-        .green {
+        .box4 {
             color: green;
         }
     </style>
 </head>
 <body>
     <header>
-        <span>
-            <div class="blue">G</div>
-            <div class="red">o</div>
-            <div class="yellow">o</div>
-            <div class="blue">g</div>
-            <div class="green">l</div>
-            <div class="red">e</div>
-        </span>  
+        <div class="box-container">
+            <div class="box1">G</div>
+            <div class="box3">o</div>
+            <div class="box2">o</div>
+            <div class="box1">g</div>
+            <div class="box4">l</div>
+            <div class="box3">e</div> 
+        </div>
     </header>
 
 </body>
