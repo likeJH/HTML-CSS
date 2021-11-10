@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>창작버튼</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+    @keyframes 당겨당겨 {
+        from{
+            transform: rotateY(0);
+        } 
+        to {
+            transform: rotateY(110deg);
+        }
+    }
+    body {
+        background-color: rgb(85, 85, 4);
+        z-index: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .door {
+        position: absolute;
+        top: 200px;
+        left: 400px;
+        border: 10px solid rgb(88, 19, 19);
+        background-color: rgba(112, 16, 16, 0.685);
+        width: 240px;
+        height: 260px;
+        z-index: 20;
+
+    }
+    .btn1 {
+        border: 4px solid rgb(117, 38, 38);
+        border-radius: 4px;
+        padding: 120px 50px;
+        background: rgb(88, 19, 19);
+        color: whitesmoke;
+        cursor: pointer;
+        transition: all .5s;
+        z-index: 30;
+        position: absolute;
+        display: inline-block;
+                
+    }
+    .btn2 {
+        border: 4px solid rgb(117, 38, 38);
+        border-radius: 4px;
+        padding: 120px 50px;
+        background: rgb(88, 19, 19);
+        color: whitesmoke;
+        cursor: pointer;
+        transition: all .5s;
+        z-index: 30;
+        position: relative;
+
+        float: right;
+    }
+    .btn2:hover {
+        transform-origin: right;
+        animation: 당겨당겨 3s;
+    }
+    .btn1:hover {
+        transform-origin: left;
+        animation: 당겨당겨 3s;
+    }
+    body:hover {
+    background-color: black;
+}
+
+    img {
+        position: absolute;
+        width: 100px;
+        height: 230px;
+        background-color: none;
+        z-index: 10;
+        left: 130px;
+        top:20px;
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="door">
+        <button class="btn1">●</button><button class="btn2">●</button>
+        <img src="C:\Users\user\Desktop\멋사\8일차/pirate.png" alt="">
+    </div>
+</body>
+</html>
